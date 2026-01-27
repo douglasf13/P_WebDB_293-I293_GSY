@@ -1,0 +1,115 @@
+.title-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "gazzetta-variable", sans-serif;
+    font-variation-settings: "wgth" 400;
+    font-style: italic;
+    font-size: 250%;
+}
+
+.shaw {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    background-color: #032158;
+    border-radius: 20%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 60px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-family: "gazzetta-variable",sans-serif;
+    font-variation-settings: 'wght' 300;
+    font-size: 150%;
+}
+
+.shaw2 {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    background-color: #032158;
+    border-radius: 20%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 60px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-family: "gazzetta-variable",sans-serif;
+    font-variation-settings: 'wght' 300;
+    font-size: 150%;
+}
+
+.worldmap {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    max-width:max-content;
+    height: 40%;
+    max-height: max-content;
+}
+
+.introduction {
+    font-family: "gazzetta-variable", sans-serif;
+    font-variation-settings: "wgth" 100;
+    font-size: 200%;
+    color: white;
+}
+
+p2 {
+    
+    font-family: "gazzetta-variable",sans-serif;
+    font-variation-settings: 'wght' 200;
+    font-size: 200%;
+    color: white;
+}
+
+body {
+    background-color: #111322;
+}
+
+.row1 {
+    border: 2px solid rgb(75 70 74);
+  border-radius: 0.5em;
+  padding: 20px 10px;
+  font: 1.2em sans-serif;
+  font-size: small;
+
+  display: flex;
+}
+
+.row1 > * {
+    padding: 10px;
+  border: 2px solid rgb(95 97 110);
+  border-radius: 0.5em;
+
+  margin: 0 10px;
+  flex: 1;
+}
+
+.flextitle {
+    text-align: center;
+}
