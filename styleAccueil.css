@@ -73,6 +73,8 @@
 }
 
 .introduction {
+
+    text-align: center;
     font-family: "gazzetta-variable", sans-serif;
     font-variation-settings: "wgth" 100;
     font-size: 200%;
@@ -81,6 +83,7 @@
 
 p2 {
     
+    text-align: center;
     font-family: "gazzetta-variable",sans-serif;
     font-variation-settings: 'wght' 200;
     font-size: 200%;
@@ -92,9 +95,8 @@ body {
 }
 
 .row1 {
-    border: 2px solid rgb(75 70 74);
-  border-radius: 0.5em;
-  padding: 20px 10px;
+    max-width: 10px;
+    max-height: min-content;
   font: 1.2em sans-serif;
   font-size: small;
 
@@ -102,14 +104,96 @@ body {
 }
 
 .row1 > * {
-    padding: 10px;
+    padding: 0px;
   border: 2px solid rgb(95 97 110);
-  border-radius: 0.5em;
+  border-radius: 4em;
 
   margin: 0 10px;
   flex: 1;
 }
 
 .flextitle {
+    text-align: center;
+}
+
+img .rocket {
+    width: 100%; /* need to overwrite inline dimensions */
+    height: auto;
+  }
+  h2 {
+    margin-bottom: .5em;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+
+  /* hover styles */
+.location-listing {
+    position: relative;
+  }
+  
+  .location-image {
+    line-height: 0;
+    overflow: hidden;
+    border-radius: 15%;
+  }
+  
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+    border-radius: 15%;
+    
+  }
+  
+  .location-title {
+    font-family: "gazzetta-variable",sans-serif;
+    font-variation-settings: 'wght' 300;
+    font-style: italic;
+    font-size: 300%;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(17, 0, 90, 0.4);
+    color: white;
+    border-radius: 15%;
+    
+    
+    
+    /* position the text in t’ middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .location-listing:hover .location-title {
+    opacity: 1;
+  }
+  
+  .location-listing:hover .location-image img {
+    filter: blur(2px);
+  }
+  
+  
+  /* for touch screen devices */
+  @media (hover: none) { 
+    .location-title {
+      opacity: 1;
+    }
+    .location-image img {
+      filter: blur(2px);
+    }
+  }
+
+.mainIntro {
     text-align: center;
 }
