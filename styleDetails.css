@@ -47,19 +47,136 @@ h2 {
 .merc {
     background-color: gray;
     text-align: center;
+    background-image:url("./imagens/mercury.jpg");
+    border-radius: 20cm;
 }
 
 .ven {
     background-color: rgb(165, 142, 107);
     text-align: center;
+    background-image: url("./imagens/venus.jpg");
+    border-radius: 20cm;
 }
 
 .mars {
     background-color: rgba(131, 33, 26, 0.877);
     text-align: center;
+    background-image: url("./imagens/mars.jpg");
+    border-radius: 20cm;
 }
 
 .moon {
     background-color: rgb(65, 65, 65);
     text-align: center;
+    background-image: url("./imagens/moon.jpg");
+    border-radius: 20cm;
+}
+
+.jup {
+    text-align: center;
+    background-image: url("./imagens/jupiter.jpg");
+    border-radius: 20cm;
+}
+
+.sat {
+    text-align: center;
+    background-image: url("./imagens/saturn.jpg");
+    border-radius: 20cm;
+}
+
+.ura {
+    text-align: center;
+    background-image: url("./imagens/uranus.jpg");
+    border-radius: 20cm;
+}
+
+.nep {
+    text-align: center;
+    background-image: url("./imagens/neptune.jfif");
+    border-radius: 20cm;
+}
+
+.plu {
+    text-align: center;
+    background-image: url("./imagens/pluto.jpg");
+    border-radius: 20cm;
+}
+
+/* Missions à Mercure */
+.mariner10, .messenger, .bepicolombo {
+    max-width: 300px;
+    border-radius: 20cm;
+    border: 2px solid gray;
+}
+
+/* Missions à Venus */
+.mariner2, .veneralander, .magellan, .akatsuki {
+    max-width: 300px;
+    border-radius: 20cm;
+    border: 2px solid orange
+}
+
+/* Missions à Mars */
+.mariner4, .viking, .mer, .curiosity, .marsexpress, .insight, .perseverance {
+    max-width: 300px;
+    border-radius: 20cm;
+    border: 2px solid #9c5b45;
+}
+
+/* Missions à Lune */
+.luna, .apollo, .chandrayaan, .change, .lro {
+    max-width: 300px;
+    border-radius: 20cm;
+    border: 2px solid #a09f9d;
+}
+
+
+.pioneer10, .voyager1, .galileo, .juno {
+    max-width: 300px;
+    border-radius: 20cm;
+    border: 2px solid #b39980;
+}
+
+
+.pioneer11, .voyager11, .cassini {
+    max-width: 300px;
+    border-radius: 20cm;
+    border: 2px solid #ebd4a8;
+}
+
+.voyager2 {
+    max-width: 300px;
+    border-radius: 20cm;
+    border: 2px solid #7394a7;
+}
+
+.voyager22 {
+    max-width: 300px;
+    border-radius: 20cm;
+    border: 2px solid #6087ec;
+}
+
+.newhorizons {
+    max-width: 300px;
+    border-radius: 20cm;
+    border: 2px solid #e4d4bd;
+}
+
+
+.pioneer102 {
+    max-width: 400px;
+    border-radius: 3cm;
+    border: 5px solid #1e1e3f;
+}
+
+.voyager12 {
+    max-width: 400px;
+    border-radius: 3cm;
+    border: 5px solid #1e1e3f;
+}
+
+.newhorizons2 {
+    max-width: 400px;
+    border-radius: 3cm;
+    border: 5px solid #1e1e3f;
 }
