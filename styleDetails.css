@@ -180,3 +180,28 @@ h2 {
     border-radius: 3cm;
     border: 5px solid #1e1e3f;
 }
+
+.hubble, .tess, .kepler, .jameswebb {
+    max-width: 400px;
+    border-radius: 3cm;
+    border: 5px solid #1e1e3f;
+}
+
+.mercury, .gemini, .apollo, .space-shuttle, .dragon, .starliner, .vostok, .voskhod, .soyuz, .shenzhou {
+    max-width: 400px;
+    border-radius: 3cm;
+    border: 5px solid #1e1e3f;
+}
+
+.salyut, .mir, .skylab, .iss, .tiangong {
+    max-width: 400px;
+    border-radius: 3cm;
+    border: 5px solid #1e1e3f;
+}
+
+.davinci, .marssamplereturn, .exomars, .europaclipper, .juice, .dragonfly, .uranusorbiter, .interpropo,
+.roman, .spherex, .artemis, .chinalunar, .spacexmars, .sscom, .gateway {
+    max-width: 400px;
+    border-radius: 3cm;
+    border: 5px solid #1e1e3f;
+}
