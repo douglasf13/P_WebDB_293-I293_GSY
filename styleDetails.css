@@ -104,11 +104,48 @@ h2 {
 
 /* Missions à Mercure */
 .mariner10, .messenger, .bepicolombo {
-    max-width: 300px;
+    
+    
+    max-width: 450px;
     border-radius: 20cm;
     border: 2px solid gray;
+    
 }
 
+.box-design {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    text-align: left;
+    border: 2px solid grey;
+    border-radius: 3cm;
+    padding: 40px;
+}
+
+.mercury-probes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+h3 {
+    font-family: "gazzetta-variable",sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-size: 400%;
+    font-style: italic;
+    text-align: center;
+    ;
+    text-decoration: underline overline;
+}
+p3 {
+    font-family: "gazzetta-variable",sans-serif;
+    font-variation-settings: 'wght' 200;
+    font-size: 200%;
+}
 /* Missions à Venus */
 .mariner2, .veneralander, .magellan, .akatsuki {
     max-width: 300px;
