@@ -114,7 +114,7 @@ h2 {
 
 .box-design {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
@@ -123,13 +123,16 @@ h2 {
     border: 2px solid grey;
     border-radius: 3cm;
     padding: 40px;
+    
 }
 
 .mercury-probes {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
     gap: 50px;
+    justify-content: space-between;
 }
 
 h3 {
@@ -148,16 +151,60 @@ p3 {
 }
 /* Missions à Venus */
 .mariner2, .veneralander, .magellan, .akatsuki {
-    max-width: 300px;
+    max-width: 450px;
     border-radius: 20cm;
     border: 2px solid orange
 }
 
+.box-design2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    text-align: left;
+    border: 2px solid rgb(241, 144, 78);
+    border-radius: 3cm;
+    padding: 40px;
+}
+
+.venus-probes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 50px;
+    justify-content: space-between;
+}
+
 /* Missions à Mars */
 .mariner4, .viking, .mer, .curiosity, .marsexpress, .insight, .perseverance {
-    max-width: 300px;
+    max-width: 450px;
     border-radius: 20cm;
     border: 2px solid #9c5b45;
+}
+
+.box-design3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    text-align: left;
+    border: 2px solid #9c5b45;
+    border-radius: 3cm;
+    padding: 40px;
+}
+
+.mars-probes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 50px;
+    justify-content: space-between;
 }
 
 /* Missions à Lune */
@@ -241,4 +288,48 @@ p3 {
     max-width: 400px;
     border-radius: 3cm;
     border: 5px solid #1e1e3f;
+}
+
+.mariner-history {
+    --max-lines: 4;
+    --line-height: 1.4;
+
+    max-height: calc(var(--max-lines) * 1em * var(--line-height));
+    line-height: var(--line-height);
+
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.mariner-history::before {
+    content: "";
+    position: absolute;
+    height: calc(2em * var(--line-height));
+    width: 100%;
+    bottom: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom, transparent, #111322);
+}
+
+.expand-button {
+    appearance: none;
+    border: 2px solid rgb(145, 145, 175);
+    padding: .5em;
+    border-radius: .25em;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.expand-button:hover {
+    background-color: rgb(30, 30, 63);
+}
+
+.expand-button::before {
+    content: "Etendre";
+    color: rgb(145, 145, 175);
+}
+
+.expand-button:checked::before {
+    content: "Réduire";
 }
