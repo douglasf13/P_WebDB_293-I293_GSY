@@ -41,14 +41,17 @@ h2 {
     font-family: "gazzetta-variable",sans-serif;
     font-variation-settings: 'wght' 400;
     font-style: italic;
-    font-size: 300%;
+    font-size: 400%;
+    margin-top: 2cm;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 .merc {
     background-color: gray;
     text-align: center;
-    background-image:url("./imagens/mercury.jpg");
+    background-image:url("./imagens/merkury.jpg");
     border-radius: 20cm;
+    
 }
 
 .ven {
@@ -123,7 +126,7 @@ h2 {
     border: 2px solid grey;
     border-radius: 3cm;
     padding: 40px;
-    
+    margin-top: 2cm;
 }
 
 .mercury-probes {
@@ -149,6 +152,13 @@ p3 {
     font-variation-settings: 'wght' 200;
     font-size: 200%;
 }
+
+p10 {
+    font-family: "gazzetta-variable",sans-serif;
+    font-variation-settings: 'wght' 300;
+    font-size: 150%;
+    font-style: italic;
+}
 /* Missions à Venus */
 .mariner2, .veneralander, .magellan, .akatsuki {
     max-width: 450px;
@@ -167,6 +177,7 @@ p3 {
     border: 2px solid rgb(241, 144, 78);
     border-radius: 3cm;
     padding: 40px;
+    margin-top: 2cm;
 }
 
 .venus-probes {
@@ -196,6 +207,7 @@ p3 {
     border: 2px solid #9c5b45;
     border-radius: 3cm;
     padding: 40px;
+    margin-top: 2cm;
 }
 
 .mars-probes {
@@ -208,10 +220,33 @@ p3 {
 }
 
 /* Missions à Lune */
-.luna, .apollo, .chandrayaan, .change, .lro {
-    max-width: 300px;
+.luna, .zond, .chandrayaan, .change, .lro {
+    max-width: 450px;
     border-radius: 20cm;
     border: 2px solid #a09f9d;
+}
+
+.moon-probes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.box-design4 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    text-align: left;
+    border: 2px solid #adadad;
+    border-radius: 3cm;
+    padding: 40px;
+    margin-top: 2cm;
 }
 
 
@@ -291,7 +326,7 @@ p3 {
 }
 
 .mariner-history {
-    --max-lines: 4;
+    --max-lines: 5;
     --line-height: 1.4;
 
     max-height: calc(var(--max-lines) * 1em * var(--line-height));
@@ -315,10 +350,14 @@ p3 {
 .expand-button {
     appearance: none;
     border: 2px solid rgb(145, 145, 175);
-    padding: .5em;
-    border-radius: .25em;
+    padding: .3em;
+    border-radius: 20cm;
     cursor: pointer;
     margin-top: 1rem;
+    font-size: 180%;
+    font-family: "gazzetta-variable",sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-style: italic;
 }
 
 .expand-button:hover {
@@ -326,10 +365,34 @@ p3 {
 }
 
 .expand-button::before {
-    content: "Etendre";
+    content: "‎ ‎ Etendre ‎  ‎ ";
     color: rgb(145, 145, 175);
 }
 
 .expand-button:checked::before {
-    content: "Réduire";
+    content: "‎ ‎ Réduire ‎  ‎";
+}
+
+.mariner-history {
+    word-wrap: break-word;
+    width: 450px;
+    letter-spacing: 0.03cm;
+    text-align: center;
+}
+
+.mariner-history:has(+ .expand-button:checked) {
+    max-height: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(145, 145, 175);
+}
+
+p9 {
+    font-family: "gazzetta-variable",sans-serif;
+    font-variation-settings: 'wght' 300;
+    font-style: italic;
+    font-size: 200%;
+    text-shadow: 3px 3px 9px rgb(0, 0, 0);
 }
